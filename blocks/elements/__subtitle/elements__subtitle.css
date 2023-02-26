@@ -1,0 +1,11 @@
+.elements__subtitle {
+  margin: 0 0 0 21px;
+  max-width: calc(215/282*100%);
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: var(--dark-color);
+}

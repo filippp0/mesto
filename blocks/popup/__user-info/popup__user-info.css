@@ -1,0 +1,15 @@
+.popup__user-info {
+  width: 100%;
+  margin: 0 0 48px 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  .popup__user-info {
+    margin-bottom: 45px;
+  }
+}

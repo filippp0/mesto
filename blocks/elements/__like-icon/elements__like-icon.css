@@ -1,0 +1,16 @@
+.elements__like-icon {
+  width: 22px;
+  height: 19px;
+  margin-right: 20px;
+  background-image: url(../../../image/heart.svg);
+}
+
+.elements__like-icon:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.elements__like-icon:active {
+  opacity: 1;
+  background-image: url(../../../image/heart-active.svg);
+}
