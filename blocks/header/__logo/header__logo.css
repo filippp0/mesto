@@ -3,7 +3,8 @@
   object-fit: cover;
   width: 142px;
   height: 33px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
+  color: var(--main-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -11,6 +12,6 @@
     width: calc(103.74/320*100%);
     height: calc(24.4/320*100%);
     margin-left: calc(27/320*100%);
-    margin-bottom: 31.6px;
+    margin-bottom: 30.6px;
   }
 }

@@ -1,6 +1,5 @@
 .elements__subtitle {
-  margin: 0 0 0 21px;
-  max-width: calc(215/282*100%);
+  margin: 0;
   overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

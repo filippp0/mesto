@@ -2,8 +2,7 @@
   padding-top: 45px;
   width: calc(880/1280*100%);
   margin: 0 auto;
-  min-height: 74px;
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
   box-sizing: border-box;
 }
 
@@ -11,6 +10,5 @@
   .page__header {
     padding-top: 28px;
     width: 100%;
-    min-height: 56px;
   }
 }

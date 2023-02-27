@@ -4,6 +4,7 @@
   padding: 0;
   margin-bottom: 10px;
   background-image: url(../../../image/edit.svg);
+  background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -21,6 +22,7 @@
     position: absolute;
     right: -28px;
     top: 8px;
+    background-size: 7.5px 7.5px;
     width: 18px;
     height: 18px;
     margin-bottom: 0;
