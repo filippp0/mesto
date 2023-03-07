@@ -10,11 +10,7 @@
   color: var(--main-color);
   background-color: var(--dark-color);
   align-self: center;
-}
-
-.popup__submit:hover {
-  opacity: 0.8;
-  cursor: pointer;
+  transition: opacity .5s linear;
 }
 
 @media screen and (max-width: 550px) {
@@ -23,5 +19,12 @@
     height: 46px;
     font-size: 14px;
     line-height: 16.94px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .popup__submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
   }
 }

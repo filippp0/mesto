@@ -10,21 +10,24 @@
   background-color: transparent;
   border: 1px solid var(--main-color);
   align-self: end;
-  cursor: pointer;
+  transition: opacity .5s linear;
 }
 
-.profile__edit:hover {
-  opacity: .6;
+@media (hover: hover) and (pointer: fine) {
+  .profile__edit:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .profile__edit {
-    position: absolute;
+    /*position: absolute;
     right: -28px;
     top: 8px;
     background-size: 7.5px 7.5px;
-    width: 18px;
+    width: 18px;*/
     height: 18px;
-    margin-bottom: 0;
+    margin-bottom: 7px;
   }
 }

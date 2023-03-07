@@ -21,10 +21,12 @@
 /*стили блока elements*/
 @import url(../blocks/elements/__lists/elements__lists.css);
 @import url(../blocks/elements/__element/elements__element.css);
+@import url(../blocks/elements/__trash/elements__trash.css);
 @import url(../blocks/elements/__image/elements__image.css);
 @import url(../blocks/elements/__rectangle/elements__rectangle.css);
 @import url(../blocks/elements/__subtitle/elements__subtitle.css);
 @import url(../blocks/elements/__like-icon/elements__like-icon.css);
+@import url(../blocks/elements/__like-icon/_active/elements__like-icon_active.css);
 /*стили блока footer*/
 @import url(../blocks/footer/__info/footer__info.css);
 /*стили блока popup*/
@@ -33,7 +35,14 @@
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close-icon/popup__close-icon.css);
 @import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__form/_disabled/popup__form_disabled.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__user-info/popup__user-info.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__submit/popup__submit.css);
+/*стили блока image-popup*/
+@import url(../blocks/image-popup/image-popup.css);
+@import url(../blocks/image-popup/__container/image-popup__container.css);
+@import url(../blocks/image-popup/__image-container/image-popup__image-container.css);
+@import url(../blocks/image-popup/__image/image-popup__image.css);
+@import url(../blocks/image-popup/__image-caption/image-popup__image-caption.css);

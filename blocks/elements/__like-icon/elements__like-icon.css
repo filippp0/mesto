@@ -4,16 +4,15 @@
   width: 100%;
   height: 19px;
   background-image: url(../../../image/heart.svg);
+  background-position: center;
   background-color: transparent;
   align-self: center;
+  transition: opacity .5s linear;
 }
 
-.elements__like-icon:hover {
-  opacity: .5;
-  cursor: pointer;
-}
-
-.elements__like-icon:active {
-  opacity: 1;
-  background-image: url(../../../image/heart-active.svg);
+@media (hover: hover) and (pointer: fine) {
+  .elements__like-icon:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
 }

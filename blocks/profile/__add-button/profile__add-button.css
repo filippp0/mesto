@@ -9,11 +9,14 @@
   background-color: transparent;
   border: 2px solid var(--main-color);
   border-radius: 2px;
-  cursor: pointer;
+  transition: opacity .5s linear;
 }
 
-.profile__add-button:hover {
-  opacity: .6;
+@media (hover: hover) and (pointer: fine) {
+  .profile__add-button:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 1279px) {
