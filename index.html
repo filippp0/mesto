@@ -26,72 +26,6 @@
       </section>
       <section aria-label="Коллекция картинок" class="elements page__elements">
         <ul class="elements__lists">
-          <li class="elements__list">
-            <article class="elements__element">
-              <button type="button" class="elements__trash"></button>
-              <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="Архыз"
-                class="elements__image">
-              <div class="elements__rectangle">
-                <h2 class="elements__subtitle">Архыз</h2>
-                <button type="button" class="elements__like-icon"></button>
-              </div>
-            </article>
-          </li>
-          <li class="elements__list">
-            <article class="elements__element">
-              <button type="button" class="elements__trash"></button>
-              <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg"
-                alt="Челябинская область" class="elements__image">
-              <div class="elements__rectangle">
-                <h2 class="elements__subtitle">Челябинская область</h2>
-                <button type="button" class="elements__like-icon"></button>
-              </div>
-            </article>
-          </li>
-          <li class="elements__list">
-            <article class="elements__element">
-              <button type="button" class="elements__trash"></button>
-              <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg" alt="Иваново"
-                class="elements__image">
-              <div class="elements__rectangle">
-                <h2 class="elements__subtitle">Иваново</h2>
-                <button type="button" class="elements__like-icon"></button>
-              </div>
-            </article>
-          </li>
-          <li class="elements__list">
-            <article class="elements__element">
-              <button type="button" class="elements__trash"></button>
-              <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="Камчатка"
-                class="elements__image">
-              <div class="elements__rectangle">
-                <h2 class="elements__subtitle">Камчатка</h2>
-                <button type="button" class="elements__like-icon"></button>
-              </div>
-            </article>
-          </li>
-          <li class="elements__list">
-            <article class="elements__element">
-              <button type="button" class="elements__trash"></button>
-              <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg"
-                alt="Холмогорский район" class="elements__image">
-              <div class="elements__rectangle">
-                <h2 class="elements__subtitle">Холмогорский район</h2>
-                <button type="button" class="elements__like-icon"></button>
-              </div>
-            </article>
-          </li>
-          <li class="elements__list">
-            <article class="elements__element">
-              <button type="button" class="elements__trash"></button>
-              <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg" alt="Байкал"
-                class="elements__image">
-              <div class="elements__rectangle">
-                <h2 class="elements__subtitle">Байкал</h2>
-                <button type="button" class="elements__like-icon"></button>
-              </div>
-            </article>
-          </li>
         </ul>
       </section>
     </main>
@@ -101,12 +35,10 @@
     <div class="popup profile-popup">
       <div class="popup__container">
         <button type="button" class="popup__close-icon"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
         <form name="personalData" class="popup__form">
-          <h2 class="popup__title">Редактировать профиль</h2>
-          <fieldset class="popup__user-info">
-            <input name="name" id="name" type="text" placeholder="Введите имя" class="popup__input popup__input_el_name">
-            <input name="job" id="job" type="text" placeholder="Расскажите о себе" class="popup__input popup__input_el_job">
-          </fieldset>
+          <input name="name" id="name" type="text" placeholder="Введите имя" class="popup__input popup__input_el_name">
+          <input name="job" id="job" type="text" placeholder="Расскажите о себе" class="popup__input popup__input_el_job">
           <button type="submit" class="popup__submit">Сохранить</button>
         </form>
       </div>
@@ -114,12 +46,10 @@
     <div class="popup card-popup">
       <div class="popup__container">
         <button type="button" class="popup__close-icon"></button>
+        <h2 class="popup__title">Новое место</h2>
         <form name="addCard" class="popup__form">
-          <h2 class="popup__title">Новое место</h2>
-          <fieldset class="popup__user-info">
-            <input name="title" id="title" type="text" placeholder="Название" class="popup__input popup__input_el_title">
-            <input name="url" id="url" type="text" placeholder="Ссылка на картинку" class="popup__input popup__input_el_url">
-          </fieldset>
+          <input name="title" id="title" type="text" placeholder="Название" class="popup__input popup__input_el_title">
+          <input name="url" id="url" type="text" placeholder="Ссылка на картинку" class="popup__input popup__input_el_url">
           <button type="submit" class="popup__submit">Создать</button>
         </form>
       </div>
@@ -127,6 +57,10 @@
     <div class="popup image-popup">
       <div class="image-popup__container">
         <button type="button" class="popup__close-icon"></button>
+        <figure class="image-popup__image-container">
+          <img src="#" alt="#" class="image-popup__image">
+          <figcaption class="image-popup__image-caption"></figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -141,12 +75,6 @@
         </div>
       </article>
     </li>
-  </template>
-  <template id="fullSizeImage">
-    <figure class="image-popup__image-container">
-      <img src="#" alt="#" class="image-popup__image">
-      <figcaption class="image-popup__image-caption"></figcaption>
-    </figure>
   </template>
   <script defer src="./scripts/index.js"></script>
 </body>

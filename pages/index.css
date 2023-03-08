@@ -37,7 +37,6 @@
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__form/_disabled/popup__form_disabled.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__user-info/popup__user-info.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__submit/popup__submit.css);
 /*стили блока image-popup*/
