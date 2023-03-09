@@ -67,7 +67,7 @@ function closePopupByClickOnOverlay(evt, popup) {
 }
 
 /*функция открытия попап для картинки*/
-function OpenedImagePopup(src, title) {
+function openedImagePopup(src, title) {
   popupImageElement.src = src;
   popupImageElement.alt = title;
   imagePopupCaption.textContent = title;
@@ -80,14 +80,12 @@ function addCard(object) {
   const imageElement = listElement.querySelector('.elements__image');
   const trashElement = listElement.querySelector('.elements__trash');
   const likeIconElement = listElement.querySelector('.elements__like-icon');
-  const objectValues = Object.values(object);
-  imageElement.src = objectValues[1];
-  imageElement.alt = objectValues[0];
-  listElement.querySelector('.elements__subtitle').textContent = objectValues[0];
-  imageElement.addEventListener('click', () => OpenedImagePopup(objectValues[1], objectValues[0]));
+  imageElement.src = object.link;
+  imageElement.alt = object.name;
+  listElement.querySelector('.elements__subtitle').textContent = object.name;
+  imageElement.addEventListener('click', () => openedImagePopup(object.link, object.name));
   likeIconElement.addEventListener('click', () => likeIconElement.classList.toggle('elements__like-icon_active'));
   trashElement.addEventListener('click', () => trashElement.closest('.elements__list').remove());
-  /*listsElement.prepend(listElement);*/
   return listElement;
 }
 
@@ -109,7 +107,7 @@ formPersonalDataElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
   profileNameElement.textContent = popupInputNameElement.value;
   profileJobElement.textContent = popupInputJobElement.value;
-  closePopup(formPersonalDataElement.closest('.popup'));
+  closePopup(profilePopupElement);
 })
 
 /*открытие попап редоктирования карточек*/
@@ -125,7 +123,7 @@ formAddCardElement.addEventListener('submit', (evt) => {
   const objectNameUrl = {name: popupInputTitleElement.value, link: popupInputUrlElement.value};
   const card = addCard(objectNameUrl);
   listsElement.prepend(card);
-  closePopup(formAddCardElement.closest('.popup'));
+  closePopup(cardPopupElement);
 })
 
 /*закрытие попап при нажатии на крестик*/
